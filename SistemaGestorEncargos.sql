@@ -67,7 +67,7 @@ CREATE TABLE documento (
     idEncargo INT,
     idTipoDoc INT,
     FOREIGN KEY (idEncargo) REFERENCES encargo(idEncargo) ON DELETE CASCADE,
-    FOREIGN KEY (idTipoDoc) REFERENCES tipoDocumento(idTipoDoc) ON DELETE CASCADE  -- Cambiado a ON DELETE CASCADE
+    FOREIGN KEY (idTipoDoc) REFERENCES tipoDocumento(idTipoDoc) ON DELETE CASCADE
 );
 
 -- Creación de la tabla historialModificaciones
